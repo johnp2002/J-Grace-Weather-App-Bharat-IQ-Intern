@@ -105,7 +105,7 @@ src[0].addEventListener('click',(e)=>{
     console.log("Search button clicked");
     document.getElementById('loading').style.display='flex';
     document.getElementById('loading').style.backdropFilter = 'blur(20px)';
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=4f5b6dc6d12d4c8fa6663353232208&q=${kywd[0].value}&days=7`)
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=6e1b7e03ad3947d6bb8114801232409&q=${kywd[0].value}&days=7`)
         .then((response) => response.json())
         .then((json) => {console.log(json); data  = json; forecst=data.forecast.forecastday;
              prtD();
